@@ -13,7 +13,7 @@ export class AppComponent {
   isLoggedIn = 0;
   emailid;
   selectedLang = "en";
-  constructor(private lang : LangService) {
+  constructor(public lang : LangService) {
       lang.setDefaultLang(this.selectedLang);
   }
 
