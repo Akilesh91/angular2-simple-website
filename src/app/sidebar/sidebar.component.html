@@ -1,0 +1,16 @@
+<div class="container banner">
+  <div class="row">
+    <div class="col-sm-12">
+      <carousel [interval]=3000>
+        <slide *ngFor = 'let lst of bannerData'>
+          <img [src]="lst.BannerUrl" alt="Slide {{lst.index}}" style="display: block; width: 100%; ">
+          <div class="carousel-caption">
+            <h3>{{lst.BannerTitle}}</h3>
+            <p>{{lst.BannerDesc}}</p>
+          </div>
+        </slide>
+      </carousel>
+    </div>
+  </div>
+  <hr>
+  </div>

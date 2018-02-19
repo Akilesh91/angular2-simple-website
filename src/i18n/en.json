@@ -1,0 +1,9 @@
+{
+  "mailformlang": {
+    "fullname": "Full Name",
+    "phone": "Phone",
+    "email": "Email",
+    "message": "Message",
+    "send": "SEND"
+  }
+}

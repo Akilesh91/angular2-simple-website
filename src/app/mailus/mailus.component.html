@@ -1,0 +1,68 @@
+<div class="container text-center min-height" >
+  <div class ="col-sm-12">
+    <div class="rank_head_section">
+      <h3 class="rank_header">{{ 'mailformlang.send' | translate }} <span>{{ 'mailformlang.message' | translate }}</span></h3>
+  </div>
+  <form action="#" method="post" [formGroup]="mailForm" #formDir="ngForm">
+    <div class="fields-grid">
+      <div class="styled-input styled-input-top">
+        <input type="text"  formControlName="name" required>
+        <label>{{ 'mailformlang.fullname' | translate }}</label>
+        <div *ngIf="name.invalid && (name.dirty || name.touched)"
+        class="alert alert-danger">
+          <div *ngIf="name.errors.required">
+            Name is required.
+          </div>
+          <div *ngIf="name.errors.minlength">
+            Name must be at least 4  characters long.
+          </div>
+          <div *ngIf="name.errors.forbiddenName">
+              Name should not be Bob.
+            </div>
+       </div>
+      </div>
+      <div class="styled-input styled-input-top">
+        <input type="text" formControlName = "phone" required>
+        <label>{{ 'mailformlang.phone' | translate }}</label>
+        <div *ngIf="phone.invalid && (phone.dirty || phone.touched)"
+        class="alert alert-danger">
+          <div *ngIf="phone.errors.required">
+            Mobile No. is required.
+          </div>
+          <div *ngIf="phone.errors.minlength">
+            Please enter valid mobile number.
+          </div>
+       </div>
+      </div>
+      <div class="styled-input">
+        <input type="email" formControlName = "email" required="">
+        <label>{{ 'mailformlang.email' | translate }}</label>
+        <div *ngIf="email.invalid && (email.dirty || email.touched)"
+        class="alert alert-danger">
+          <div *ngIf="email.errors.required">
+            Email ID is required.
+          </div>
+       </div>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+    <div class="styled-input textarea-grid">
+      <textarea formControlName = "message" required=""></textarea>
+      <label>{{ 'mailformlang.message' | translate }}</label>
+      <span></span>
+    </div>
+    <input type="button" value="{{'mailformlang.send' | translate}}" (click) ="submitForm(template,formDir)" >
+  </form>
+  </div>
+</div>
+<ng-template #template>
+  <div class="modal-header" >
+    <h4 class="modal-title pull-left">DEFT</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+  {{feedback}}
+  </div>
+</ng-template>

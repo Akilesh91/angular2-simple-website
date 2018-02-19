@@ -1,0 +1,21 @@
+[
+    {
+   "BannerID": 1,
+   "BannerUrl": "assets/images/banner/4.jpg",
+   "BannerTitle": "Test",
+   "BannerDesc": "Test"
+    },
+    {
+        "BannerID": 2,
+        "BannerUrl": "assets/images/banner/5.jpg",
+        "BannerTitle": "Test",
+        "BannerDesc": "Test"
+    },
+    {
+        "BannerID": 3,
+        "BannerUrl": "assets/images/banner/6.jpg",
+        "BannerTitle": "Test",
+        "BannerDesc": "Test"
+    }
+]
+

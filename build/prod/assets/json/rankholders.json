@@ -1,0 +1,22 @@
+[{
+    "StudentID": 1,
+    "ImageUrl": "assets/images/rankholders/about.png",
+    "StudentName": "James Wan",
+    "StudentTitle": "Test",
+    "StudentDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis.Lorem ipsum dolor."
+  },
+  {
+    "StudentID": 2,
+    "ImageUrl": "assets/images/rankholders/about.png",
+    "StudentName": "John Peter",
+    "StudentTitle": "Test",
+    "StudentDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis.Lorem ipsum dolor."
+  },
+  {
+    "StudentID": 3,
+    "ImageUrl": "assets/images/rankholders/about.png",
+    "StudentName": "Paul Walkher",
+    "StudentTitle": "Test",
+    "StudentDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis.Lorem ipsum dolor."
+  }
+]

@@ -1,0 +1,160 @@
+
+<div class="container text-center">
+  <br>
+  <div class="row">
+    <div class="col-md-8">
+        <div class="feature">
+            <img src="assets/images/about.png" alt="about" class="img-responsive img-circle " width="200px" height="200px"/>
+              <h3>Lorem ipsum dolor</h3>
+              <div class="title_border"></div>
+              <p>Praediximus enim Montium sub ipso vivendi termino his vocabulis appellatos fabricarum culpasse tribunos ut adminicula futurae molitioni pollicitos</p>
+              <p>Praediximus enim Montium sub ipso vivendi termino his vocabulis appellatos fabricarum culpasse tribunos ut adminicula futurae molitioni pollicitos</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+    <!-- Fluid width widget -->
+        <div class="panel panel-danger">
+              <div class="panel-heading">
+                  <h3 class="panel-title">
+                      <span class="glyphicon glyphicon-calendar"></span> 
+                      Calendar Events
+                  </h3>
+              </div>
+              <div class="panel-body">
+                  <ul class="media-list">
+                      <li class="media">
+                          <div class="media-left">
+                              <div class="panel panel-danger text-center date">
+                                  <div class="panel-heading month">
+                                      <span class="panel-title strong">
+                                          Mar
+                                      </span>
+                                  </div>
+                                  <div class="panel-body day text-danger">
+                                      23
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="media-body">
+                              <h4 class="media-heading">
+                                  Pulvinar Mauris Eu
+                              </h4>
+                              <p>
+                                  Vivamus pulvinar mauris eu placerat blandit. In euismod tellus vel ex vestibulum congue.
+                              </p>
+                          </div>
+                      </li>
+                      <li class="media">
+                          <div class="media-left">
+                              <div class="panel panel-danger text-center date">
+                                  <div class="panel-heading month">
+                                      <span class="panel-title strong">
+                                          Jan
+                                      </span>
+                                  </div>
+                                  <div class="panel-body text-danger day">
+                                      16
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="media-body">
+                              <h4 class="media-heading">
+                                  Aenean Consectetur Ultricies
+                              </h4>
+                              <p>
+                                  Curabitur vel malesuada tortor, sit amet ultricies mauris. Aenean consectetur ultricies luctus.
+                              </p>
+                          </div>
+                      </li>
+                      <li class="media">
+                          <div class="media-left">
+                              <div class="panel panel-danger text-center date">
+                                  <div class="panel-heading month">
+                                      <span class="panel-title strong all-caps">
+                                          Dec
+                                      </span>
+                                  </div>
+                                  <div class="panel-body text-danger day">
+                                      8
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="media-body">
+                              <h4 class="media-heading">
+                                  Praesent Tincidunt
+                              </h4>
+                              <p>
+                                  Sed convallis dignissim magna et dignissim. Praesent tincidunt sapien eu gravida dignissim.
+                              </p>
+                          </div>
+                      </li>
+                  </ul>
+                  <a [routerLink] = "['/moreevents']" class="btn btn-default btn-block moreevents">More Events »</a>
+              </div>
+          </div>
+    <!-- End fluid width widget -->
+    </div>
+  </div>
+  <hr>
+</div>
+<!-- stats -->
+<div class="stats" id="stats">
+		<div class="container">
+			<div class="col-md-3 stats_left w3_counter_grid">
+				<i class="fa fa-smile-o" aria-hidden="true"></i>
+				<p class="counter">{{count1}}</p>
+				<h3>Happy Clients</h3>
+			</div>
+			<div class="col-md-3 stats_left w3_counter_grid1">
+				<i class="fa fa-instagram" aria-hidden="true"></i>
+				<p class="counter">{{count2}}</p>
+				<h3>Instagram</h3>
+			</div>
+			<div class="col-md-3 stats_left w3_counter_grid2">
+				<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+				<p class="counter">{{count3}}</p>
+				<h3>Completed Work </h3>
+			</div>
+			<div class="col-md-3 stats_left w3_counter_grid3">
+				<i class="fa fa-trophy" aria-hidden="true"></i>
+				<p class="counter">{{count4}}</p>
+				<h3>Awards Won </h3>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+  <!-- //stats -->
+  <!-- Rank Holders -->
+<div class="container text-center">
+    <div class="rank_head_section">
+        <h3 class="rank_header">Our <span>testimonials</span></h3>
+    </div>
+  <carousel  [interval]=3000>
+    <slide *ngFor = 'let lst of RankholdersData'>
+            <div class="test-grid">
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                <p>{{lst.StudentDesc}}</p>
+                <div class="test-grid1">
+                    <div class="test-grid2">
+
+                        <img [src]="lst.ImageUrl" alt="Slide {{lst.index}}" class="img-responsive img-circle" width="80px" height="80px">
+                    </div>
+                    <div class="test-grid2_text">
+                        <h4>{{lst.StudentName}}</h4>
+                        <span>{{lst.StudentTitle}}</span>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+          </slide>
+</carousel>
+</div>
+<br>
+<!-- Rank Holders -->
+<!-- Map -->
+<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387142.84010033106!2d-74.25819252532891!3d40.70583163828471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1475140387172"
+		    style="border:0"></iframe>
+
+  </div>
+  <!-- Map -->
