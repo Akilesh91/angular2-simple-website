@@ -1,25 +1,23 @@
 <div class="rank_head_section">
-  <h3 class="rank_header">Our <span>Gallery</span></h3>
+  <h3 class="rank_header">Known <span>Technologies</span></h3>
 </div>
 <div class="container gal-container">
   <div class="col-md-4 col-sm-6 co-xs-12 gal-item" *ngFor = 'let lst of galleryData;let i = index'>
     <div class="box">
-      <a href="javascript:void(0);" (click)="previewImage(i+1)">
+      <a href="javascript:void(0);" (click)="openModal(template,lst.ImageUrl)">
         <img [src]="lst.ImageUrl">
       </a>
-      <div class="modal fade" id="preview{{i+1}}" tabindex="-1" role="dialog" aria-hidden="false"  role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-              <button type="button" class="close" (click)="closePreviewImage(i+1)" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <div class="modal-body">
-              <img [src]="lst.ImageUrl">
-            </div>
-              <div class="col-md-12 description">
-                <h4>{{lst.ImageDesc}}</h4>
-              </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
+<ng-template #template>
+    <div class="modal-header" >
+        <h4 class="modal-title pull-left">{{modalTitle}}</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <img [src]="modalImageUrl" class ="img-responsive">
+    </div>
+  </ng-template>

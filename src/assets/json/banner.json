@@ -2,20 +2,20 @@
     {
    "BannerID": 1,
    "BannerUrl": "assets/images/banner/4.jpg",
-   "BannerTitle": "Test",
-   "BannerDesc": "Test"
+   "BannerTitle": "Everbody in this country should learn to program a computer, because it teaches you how to think",
+   "BannerDesc": "Steve Jobs"
     },
     {
         "BannerID": 2,
         "BannerUrl": "assets/images/banner/5.jpg",
-        "BannerTitle": "Test",
-        "BannerDesc": "Test"
+        "BannerTitle": "I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it",
+        "BannerDesc": "Bill Gates"
     },
     {
         "BannerID": 3,
         "BannerUrl": "assets/images/banner/6.jpg",
-        "BannerTitle": "Test",
-        "BannerDesc": "Test"
+        "BannerTitle": "Program is thinking not typing",
+        "BannerDesc": "Casy Patton"
     }
 ]
 

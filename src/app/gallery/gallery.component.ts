@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,TemplateRef } from '@angular/core';
+import { BsModalService } from 'ngx-bootstrap/modal';
+import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 import { GalleryData } from '../gallery/gallery';
 import { GalleryService } from '../gallery/gallery.service';
 import { Http , Response } from '@angular/http';
@@ -11,8 +13,10 @@ import { Observable } from 'rxjs/Observable';
   providers:[GalleryService]
 })
 export class GalleryComponent implements OnInit {
+  modalRef: BsModalRef;
   galleryData: GalleryData[];
-  constructor(private _galleryData: GalleryService) {
+  modalImageUrl ="";
+  constructor(private _galleryData: GalleryService,private modalService: BsModalService) {
    }
 
   ngOnInit() {
@@ -24,29 +28,8 @@ export class GalleryComponent implements OnInit {
       }
       );
   }
-
-  previewImage(i) {
-    var iDiv = document.createElement('div');
-    iDiv.className = 'modal-backdrop fade in';
-    iDiv.id = 'modalFade';
-    var body = document.getElementsByTagName("body")[0];
-    var previewImage = document.getElementById("preview"+i);
-    previewImage.className = "modal fade in";
-    previewImage.style.display="block";
-    previewImage.setAttribute("aria-hidden","false");
-    previewImage.insertBefore(iDiv, previewImage.childNodes[0]);
-    body.className = "modal-open";
-    body.style.paddingRight="17px";
-  }
-  closePreviewImage(i){
-    var iDiv = document.getElementById('modalFade');
-    var body = document.getElementsByTagName("body")[0];
-    var previewImage = document.getElementById("preview"+i);
-    previewImage.className = "modal fade";
-    previewImage.style.display="none";
-    previewImage.setAttribute("aria-hidden","true");
-    iDiv.remove();
-    body.className = "";
-    body.style.paddingRight="";
+  openModal(template: TemplateRef<any>,GalleryImageUrl) {
+    this.modalImageUrl=GalleryImageUrl;
+    this.modalRef = this.modalService.show(template);
   }
 }

@@ -8,7 +8,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<h1><a class="navbar-brand"  [routerLink] = "['']"> <span>D</span>eft</a></h1>
+					<h1><a class="navbar-brand"  [routerLink] = "['']"> <span>T</span>echie Inside</a></h1>
 
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -16,14 +16,8 @@
 					<nav class="menu-hover-effect menu-hover-effect-4">
 						<ul class="nav navbar-nav">
 							<li [routerLinkActive]="['active']"  [routerLinkActiveOptions]="{exact:true}"><a  [routerLink] = "['']" class="hvr-ripple-in"> Home</a></li>
-							<li [routerLinkActive]="['active']"  [routerLinkActiveOptions]="{exact:true}"><a  [routerLink] = "['/gallery']" class="hvr-ripple-in">Gallery</a></li>
-							<li class="dropdown" [routerLinkActive]="['active']"  [routerLinkActiveOptions]="{exact:true}">
-								<a href="javascript:void(0)" class="dropdown-toggle hvr-ripple-in" data-toggle="dropdown">Academics <b class="fa fa-caret-down" aria-hidden="true"></b></a>
-								<ul class="dropdown-menu short_dropdown">
-									<li><a href="typography.html">Achievements</a></li>
-									<li><a href="typography.html">Awards</a></li>
-								</ul>
-							</li>
+							<li [routerLinkActive]="['active']"  [routerLinkActiveOptions]="{exact:true}"><a  [routerLink] = "['/gallery']" class="hvr-ripple-in">Technologies</a></li>
+							<li [routerLinkActive]="['active']"  [routerLinkActiveOptions]="{exact:true}"><a  [routerLink] = "['/moreevents']" class="hvr-ripple-in">Achievements</a></li>
 							<li [routerLinkActive]="['active']"  [routerLinkActiveOptions]="{exact:true}"><a [routerLink] = "['/contact']" class="hvr-ripple-in"  *ngIf="isLoggedIn != null">Contact Us</a></li>
 							<li [routerLinkActive]="['active']"  [routerLinkActiveOptions]="{exact:true}"><a [routerLink] = "['/mailus']" class="hvr-ripple-in">Mail Us</a></li>
 						</ul>

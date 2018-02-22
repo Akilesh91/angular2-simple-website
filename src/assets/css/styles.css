@@ -385,6 +385,7 @@ a.navbar-brand {
     letter-spacing: 1px;
     margin: 0 auto 1em;
     width: 78%;
+    min-height:160px;
 }
 
 .test-grid span {
@@ -396,7 +397,7 @@ a.navbar-brand {
 .test-grid1 {
     margin: 0 auto 2em;
     text-align: center;
-    width: 20%;
+    width: 40%;
 }
 
 .test-grid {
@@ -410,7 +411,7 @@ a.navbar-brand {
 .test-grid2_text {
     float: left;
     margin-left: 1em;
-    text-align: left;
+    text-align: center;
 }
 .test-grid h4 {
     font-size: 1.2em;

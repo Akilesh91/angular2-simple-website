@@ -15,10 +15,10 @@ export class HomeComponent implements OnInit {
   count2= 0;
   count3= 0;
   count4= 0;
-  start1 = 60;
-  start2 = 70;
-  start3 = 80;
-  start4 = 90;
+  start1 = 85;
+  start2 = 83;
+  start3 = 75;
+  start4 = 84;
   constructor(private _rankholdersData: RankholdersService) {
        /* Timer Code Starts Here */
        this._timerTick();
