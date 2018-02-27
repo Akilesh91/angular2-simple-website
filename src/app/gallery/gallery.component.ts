@@ -16,6 +16,8 @@ export class GalleryComponent implements OnInit {
   modalRef: BsModalRef;
   galleryData: GalleryData[];
   modalImageUrl ="";
+  modalTitle = "";
+  modalRating = "";
   constructor(private _galleryData: GalleryService,private modalService: BsModalService) {
    }
 
@@ -28,8 +30,10 @@ export class GalleryComponent implements OnInit {
       }
       );
   }
-  openModal(template: TemplateRef<any>,GalleryImageUrl) {
+  openModal(template: TemplateRef<any>,GalleryImageTitle,GalleryImageUrl,GalleryImageRating) {
     this.modalImageUrl=GalleryImageUrl;
+    this.modalTitle=GalleryImageTitle;
+    this.modalRating=GalleryImageRating;
     this.modalRef = this.modalService.show(template);
   }
 }

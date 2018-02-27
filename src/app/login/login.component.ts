@@ -24,9 +24,9 @@ export class LoginComponent implements OnInit {
     this.username = sessionStorage.getItem('username');
     this.isLoggedIn =sessionStorage.getItem('isLoggedIn');
     this.emailid = sessionStorage.getItem('emailid');
-    console.log(this.username);
+    /* console.log(this.username);
     console.log(this.isLoggedIn);
-    console.log(this.emailid);
+    console.log(this.emailid); */
    }
 
   ngOnInit() {

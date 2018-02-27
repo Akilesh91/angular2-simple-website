@@ -16,6 +16,7 @@ import { CarouselModule,PaginationModule,ModalModule } from 'ngx-bootstrap';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 import { GalleryComponent } from './gallery/gallery.component';
+import {ProjectComponent} from './projects/projects.component';
 import { MoreeventsComponent } from './moreevents/moreevents.component';
 
 /* For Form Validation & Creationm */
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'moreevents', component: MoreeventsComponent },
-  { path: 'gallery', component: GalleryComponent },
+  { path: 'technologies', component: GalleryComponent },
+  { path: 'projects', component: ProjectComponent },
   { path: 'mailus', component: MailusComponent },
   { path: 'contact', component: ContactComponent }
 ];
@@ -49,7 +51,8 @@ const appRoutes: Routes = [
       MoreeventsComponent,
       CustomdirectiveDirective,
       LoginComponent,
-      ContactComponent
+      ContactComponent,
+      ProjectComponent
   ],
   imports: [
     BrowserModule,

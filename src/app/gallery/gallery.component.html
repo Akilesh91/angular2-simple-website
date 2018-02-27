@@ -4,7 +4,7 @@
 <div class="container gal-container">
   <div class="col-md-4 col-sm-6 co-xs-12 gal-item" *ngFor = 'let lst of galleryData;let i = index'>
     <div class="box">
-      <a href="javascript:void(0);" (click)="openModal(template,lst.ImageUrl)">
+      <a href="javascript:void(0);" (click)="openModal(template,lst.ImageTitle,lst.ImageUrl,lst.ImageRating)">
         <img [src]="lst.ImageUrl">
       </a>
     </div>
@@ -19,5 +19,8 @@
     </div>
     <div class="modal-body">
       <img [src]="modalImageUrl" class ="img-responsive">
+    </div>
+    <div class="modal-footer" >
+        <h4 class="modal-title pull-left">Rating : {{modalRating}}/5</h4>
     </div>
   </ng-template>

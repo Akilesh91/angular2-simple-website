@@ -1,57 +1,73 @@
 [
   {
     "ImageID": 1,
-    "ImageTitle":"Test",
+    "ImageTitle":"HTML",
     "ImageDesc":"This is the first one on my Gallery",
-    "ImageUrl": "assets/images/gallery/4.png"
+    "ImageUrl": "assets/images/gallery/4.png",
+    "ImageRating":4
   },
   {
-    "ImageID": 4,
-    "ImageTitle":"Test",
+    "ImageID": 2,
+    "ImageTitle":"CSS",
     "ImageDesc":"This is the fourth one on my Gallery",
-    "ImageUrl": "assets/images/gallery/4.png"
+    "ImageUrl": "assets/images/gallery/4.png",
+    "ImageRating":3
   },
   {
     "ImageID": 3,
-    "ImageTitle":"Test",
+    "ImageTitle":"Bootstrap",
     "ImageDesc":"This is the third one on my Gallery",
-    "ImageUrl": "assets/images/gallery/6.jpg"
+    "ImageUrl": "assets/images/gallery/6.jpg",
+    "ImageRating":4
   },
 
   {
     "ImageID": 5,
-    "ImageTitle":"Test",
+    "ImageTitle":"PHP",
     "ImageDesc":"This is the fifth one on my Gallery",
-    "ImageUrl": "assets/images/gallery/5.png"
-  },
-  {
-    "ImageID": 2,
-    "ImageTitle":"Test",
-    "ImageDesc":"This is the second one on my Gallery",
-    "ImageUrl": "assets/images/gallery/5.png"
+    "ImageUrl": "assets/images/gallery/5.png",
+    "ImageRating":4
   },
   {
     "ImageID": 6,
-    "ImageTitle":"Test",
-    "ImageDesc":"This is the sixth one on my Gallery",
-    "ImageUrl": "assets/images/gallery/6.jpg"
-  },
-  {
-    "ImageID": 8,
-    "ImageTitle":"Test",
-    "ImageDesc":"This is the first one on my Gallery",
-    "ImageUrl": "assets/images/gallery/5.png"
+    "ImageTitle":"CodeIgniter",
+    "ImageDesc":"This is the second one on my Gallery",
+    "ImageUrl": "assets/images/gallery/5.png",
+    "ImageRating":4
   },
   {
     "ImageID": 7,
-    "ImageTitle":"Test",
-    "ImageDesc":"This is the seventh one on my Gallery",
-    "ImageUrl": "assets/images/gallery/4.png"
+    "ImageTitle":"Moodle LMS",
+    "ImageDesc":"This is the sixth one on my Gallery",
+    "ImageUrl": "assets/images/gallery/6.jpg",
+    "ImageRating":4
+  },
+  {
+    "ImageID": 8,
+    "ImageTitle":"Drupal",
+    "ImageDesc":"This is the first one on my Gallery",
+    "ImageUrl": "assets/images/gallery/5.png",
+    "ImageRating":3
   },
   {
     "ImageID": 9,
-    "ImageTitle":"Test",
+    "ImageTitle":"MySQL",
+    "ImageDesc":"This is the seventh one on my Gallery",
+    "ImageUrl": "assets/images/gallery/4.png",
+    "ImageRating":4
+  },
+  {
+    "ImageID": 10,
+    "ImageTitle":"AngularJS 2",
     "ImageDesc":"This is the first one on my Gallery",
-    "ImageUrl": "assets/images/gallery/6.jpg"
+    "ImageUrl": "assets/images/gallery/6.jpg",
+    "ImageRating":3
+  },
+  {
+    "ImageID": 11,
+    "ImageTitle":"JQuery",
+    "ImageDesc":"This is the first one on my Gallery",
+    "ImageUrl": "assets/images/gallery/6.jpg",
+    "ImageRating":4
   }
 ]
