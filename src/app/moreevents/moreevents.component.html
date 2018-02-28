@@ -26,11 +26,11 @@
     </thead>
     <tbody>
       <tr class="cursor-pointer" *ngFor = 'let lst of eventData | slice:start:end; let i = index' (click)="openModal(template,lst.EventTitle,lst.EventDesc,lst.EventImageUrl)">
-        <th scope="row"  class="text-center">{{serialNoCal(i, currentPage, itemsPerPage)}}</th>
-        <td  class="text-center">{{lst.EventTitle}}</td>
-        <td  class="text-left">{{lst.EventDesc}}</td>
-        <td  class="text-center">{{lst.EventStartDate}}</td>
-        <td  class="text-center">{{lst.EventOrganizer}}</td>
+        <th scope="row"  class="col-sm-1 text-center">{{serialNoCal(i, currentPage, itemsPerPage)}}</th>
+        <td  class="col-sm-2 text-center">{{lst.EventTitle}}</td>
+        <td  class="col-sm-5 text-left">{{lst.EventDesc}}</td>
+        <td  class="col-sm-2 text-center">{{lst.EventStartDate}}</td>
+        <td  class="col-sm-3 text-center">{{lst.EventOrganizer}}</td>
         <!--<td  class="text-left">{{lst.EventEndDate}}</td>-->
       </tr>
       <tr *ngIf="emptyData">

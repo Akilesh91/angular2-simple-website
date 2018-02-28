@@ -26,7 +26,7 @@ import { LoginComponent } from './login/login.component';
 
 /* For Mutlilingual Support */
 import {TranslateModule} from 'ng2-translate';
-import { ContactComponent } from './contact/contact/contact.component';
+import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },

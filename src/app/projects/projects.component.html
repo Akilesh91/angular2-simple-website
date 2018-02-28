@@ -17,7 +17,7 @@
     <thead>
       <tr>
         <th class="text-center">#</th>
-        <th  class="text-center">Title</th>
+        <th  class="text-left">Title</th>
         <th  class="text-center">Start Date</th>
         <th  class="text-center">End Date</th>
         <th  class="text-center">Status</th>
@@ -26,10 +26,10 @@
     <tbody>
       <tr class="cursor-pointer" *ngFor = 'let lst of projectData | slice:start:end; let i = index' (click)="openModal(template,lst.ProjectTitle,lst.ProjectDesc,lst.ProjectStartDate,lst.ProjectEndDate,lst.ProjectClient,lst.ProjectRole,lst.ProjectRoleDesc,lst.ProjectUrl,lst.ProjectStatus)">
         <th scope="row"  class="text-center">{{serialNoCal(i, currentPage, itemsPerPage)}}</th>
-        <td  class="text-center">{{lst.ProjectTitle}}</td>
-        <td  class="text-left">{{lst.ProjectStartDate}}</td>
+        <td  class="text-left">{{lst.ProjectTitle}}</td>
+        <td  class="text-center">{{lst.ProjectStartDate}}</td>
         <td  class="text-center">{{lst.ProjectEndDate}}</td>
-        <td  class="text-center">{{lst.Status}}</td>
+        <td  class="text-center">{{lst.ProjectStatus == 1 ? "Completed" : "On Going" }}</td>
       </tr>
       <tr *ngIf="emptyData">
         <td colspan="5">No Data Found !</td>
