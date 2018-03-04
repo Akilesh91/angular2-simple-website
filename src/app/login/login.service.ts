@@ -7,7 +7,9 @@ import 'rxjs/add/operator/catch';
 import { Login } from './login';
 @Injectable()
 export class LoginService {
-  private _loginURL = "http://localhost/school/login.php";
+  //Enable if service is called
+  //private _loginURL = "http://localhost/school/login.php";
+  private _loginURL = "assets/json/login.json";
   constructor(private _http:Http) { }
  // login(formDir): Observable<Login[]> {
   login(formDir): any {
@@ -15,10 +17,15 @@ export class LoginService {
     Object.keys(formDir.value).forEach(k => {
       someFormData.append(k, formDir.value[k]);
     });
-     return this._http.post(this._loginURL,someFormData)
+    // Enable if Service is called
+     /* return this._http.post(this._loginURL,someFormData)
      .map((response: Response) => response.json())
      //.do(data => console.log(JSON.stringify(data)))
+     .catch(this.handleError); */
+     return this._http.get(this._loginURL)
+     .map((response: Response) =><Login[]> response.json())
      .catch(this.handleError);
+     
   }
   private handleError(error: Response) {
     console.error(error);

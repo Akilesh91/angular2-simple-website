@@ -1,7 +1,10 @@
 /*** For Nav Bar ****/
+body{
+    font-family: 'Raleway', sans-serif;
+}
 .banner_nav {
     margin: 0 auto;
-    width: 90%;
+    width: 92%;
 }
 
 
@@ -768,4 +771,22 @@ input[type="button"]:hover {
     width:10px;
     z-index:1000;
     cursor: pointer;
+}
+.orange{
+    color: #ffb500;
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #ffb500; /* orange */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-top:275px;
+    margin-left:625px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

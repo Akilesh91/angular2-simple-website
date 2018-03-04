@@ -27,6 +27,7 @@ import { LoginComponent } from './login/login.component';
 /* For Mutlilingual Support */
 import {TranslateModule} from 'ng2-translate';
 import { ContactComponent } from './contact/contact.component';
+import { ResumeComponent } from './resume/resume.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -36,7 +37,8 @@ const appRoutes: Routes = [
   { path: 'technologies', component: GalleryComponent },
   { path: 'projects', component: ProjectComponent },
   { path: 'mailus', component: MailusComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: 'contact', component: ContactComponent },
+  { path: 'resume', component: ResumeComponent }
 ];
 @NgModule({
     declarations: [
@@ -52,7 +54,8 @@ const appRoutes: Routes = [
       CustomdirectiveDirective,
       LoginComponent,
       ContactComponent,
-      ProjectComponent
+      ProjectComponent,
+      ResumeComponent
   ],
   imports: [
     BrowserModule,

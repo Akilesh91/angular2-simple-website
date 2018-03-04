@@ -7,8 +7,14 @@
             <img src="assets/images/about.jpg" alt="about" class="img-responsive img-circle " width="200px" height="200px"/>
               <h3>Web Developer</h3>
               <div class="title_border"></div>
-              <p>Hello, myself Akilesh from Chennai. I'm a Post Graduate MCA degree holder. I'm having a 2+ years of experience in website development. Currently, I'm worked in SRM Technologies Pvt Ltd., Chennai.</p>
-              <p>So far, I had worked in 5 projects and I'm experienced in the following technologies like HTML, PHP, CodeIgniter,Moodle LMS,  Bootstrap, jQuery, MySQL and Angular 2.</p>
+              <p>Hello all a little about me !!! </p>
+              <p>I'm Akilesh from Chennai. I'm a Post Graduate MCA degree holder. I'm having a 2+ years of experience in website development. Currently, I'm worked in SRM Technologies Pvt Ltd., Chennai. So far, I had worked in 5 projects and I'm experienced in the following technologies like HTML, PHP, CodeIgniter,Moodle LMS,  Bootstrap, jQuery, MySQL and Angular 2. For freelancing or full Time work please reach me out !!</p>
+              <p>e-mail: <a href="mailto:akileshbsc91@gmail.com" target="_top">akileshbsc91@gmail.com</a></p>
+              <address>
+                    Visit me at:<br>
+                    BSR Apartment, Block-2, Flat-F2 <br>
+                    Chrompet - 600044
+              </address>
       </div>
     </div>
     <div class="col-md-4">
@@ -22,69 +28,25 @@
               </div>
               <div class="panel-body">
                   <ul class="media-list">
-                      <li class="media">
+                      <li class="media cursor-pointer" *ngFor = "let EventData of MoreeventsData" (click)="openModal(template,EventData.EventTitle,EventData.EventDesc,EventData.EventImageUrl)">
                           <div class="media-left">
                               <div class="panel panel-danger text-center date">
                                   <div class="panel-heading month">
                                       <span class="panel-title strong">
-                                          Mar
+                                          {{EventData.EventStartDate | date:'MMM yy'}}
                                       </span>
                                   </div>
                                   <div class="panel-body day text-danger">
-                                      23
+                                    {{EventData.EventStartDate | date:'dd'}}
                                   </div>
                               </div>
                           </div>
                           <div class="media-body">
                               <h4 class="media-heading">
-                                  Pulvinar Mauris Eu
+                                  {{EventData.EventTitle}}
                               </h4>
                               <p>
-                                  Vivamus pulvinar mauris eu placerat blandit. In euismod tellus vel ex vestibulum congue.
-                              </p>
-                          </div>
-                      </li>
-                      <li class="media">
-                          <div class="media-left">
-                              <div class="panel panel-danger text-center date">
-                                  <div class="panel-heading month">
-                                      <span class="panel-title strong">
-                                          Jan
-                                      </span>
-                                  </div>
-                                  <div class="panel-body text-danger day">
-                                      16
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="media-body">
-                              <h4 class="media-heading">
-                                  Aenean Consectetur Ultricies
-                              </h4>
-                              <p>
-                                  Curabitur vel malesuada tortor, sit amet ultricies mauris. Aenean consectetur ultricies luctus.
-                              </p>
-                          </div>
-                      </li>
-                      <li class="media">
-                          <div class="media-left">
-                              <div class="panel panel-danger text-center date">
-                                  <div class="panel-heading month">
-                                      <span class="panel-title strong all-caps">
-                                          Dec
-                                      </span>
-                                  </div>
-                                  <div class="panel-body text-danger day">
-                                      8
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="media-body">
-                              <h4 class="media-heading">
-                                  Praesent Tincidunt
-                              </h4>
-                              <p>
-                                  Sed convallis dignissim magna et dignissim. Praesent tincidunt sapien eu gravida dignissim.
+                                  {{EventData.EventDesc}}
                               </p>
                           </div>
                       </li>
@@ -156,8 +118,19 @@
 <!-- Rank Holders -->
 <!-- Map -->
 <div class="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387142.84010033106!2d-74.25819252532891!3d40.70583163828471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1475140387172"
-		    style="border:0"></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.274538052861!2d80.14316881437506!3d12.95427639086722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525e4d08a772c7%3A0x30c07d6b183e63ca!2sBSR+Castle+Flats!5e0!3m2!1sen!2sin!4v1520159036227" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
   </div>
   <!-- Map -->
+  <ng-template #template>
+    <div class="modal-header" >
+      <h4 class="modal-title pull-left">{{modalTitle}}</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      {{modalDesc}}
+      <img [src]="modalImageUrl" class ="img-responsive">
+    </div>
+  </ng-template>

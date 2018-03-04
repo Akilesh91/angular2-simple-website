@@ -5,5 +5,14 @@
     "email": "Email",
     "message": "Message",
     "send": "SEND"
+  },
+  "homelang":{
+    "achievements":"Achievements",
+    "sslc":"SSLC",
+     "hsc" :"HSC",
+     "ug":"UG - B.Sc",
+     "pg": "PG - MCA",
+     "worked": "Worked",
+     "projects":"Projects"
   }
 }

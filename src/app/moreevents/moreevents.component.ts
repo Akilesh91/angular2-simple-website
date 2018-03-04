@@ -21,7 +21,7 @@ export class MoreeventsComponent implements OnInit {
   totalItems = 0;
   currentPage = 1;
   smallnumPages = 0;
-  itemsPerPage = 10;
+  itemsPerPage = 5;
   start = 0;
   end = 0;
   serialNo = 0;

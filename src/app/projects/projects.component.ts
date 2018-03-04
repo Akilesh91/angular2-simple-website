@@ -34,6 +34,8 @@ export class ProjectComponent implements OnInit {
   ProjectRoleDesc= "";
   ProjectUrl= "";
   ProjectStatus;
+  ProjectTechnologies="";
+  ProjectImageUrl = "";
   terms ="";
   emptyData=false;
   constructor(private _projectData: ProjectService,private modalService: BsModalService) {
@@ -80,12 +82,13 @@ export class ProjectComponent implements OnInit {
           }
         );
   }
-  openModal(template: TemplateRef<any>,ProjectTitle,ProjectDesc,ProjectStartDate,ProjectEndDate,ProjectClient,ProjectRole,ProjectRoleDesc,ProjectUrl,ProjectStatus){
+  openModal(template: TemplateRef<any>,ProjectTitle,ProjectDesc,ProjectStartDate,ProjectEndDate,ProjectTechnologies,ProjectClient,ProjectRole,ProjectRoleDesc,ProjectUrl,ProjectStatus,ProjectImageUrl){
     this.ProjectTitle =ProjectTitle;
     this.ProjectDesc =ProjectDesc;
     this.ProjectStartDate =ProjectStartDate;
     this.ProjectEndDate =ProjectEndDate;
     this.ProjectClient =ProjectClient;
+    this.ProjectTechnologies =ProjectTechnologies;
     this.ProjectRole =ProjectRole;
     this.ProjectRoleDesc =ProjectRoleDesc;
     this.ProjectStatus =ProjectStatus;
@@ -93,6 +96,8 @@ export class ProjectComponent implements OnInit {
     if(this.ProjectStatus == 1){
       this.ProjectStatus = "Completed";
     }
+    this.ProjectUrl = ProjectUrl;
+    this.ProjectImageUrl = ProjectImageUrl;
     this.modalRef = this.modalService.show(template);
   }
   search(terms){

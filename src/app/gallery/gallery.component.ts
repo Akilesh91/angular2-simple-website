@@ -18,6 +18,7 @@ export class GalleryComponent implements OnInit {
   modalImageUrl ="";
   modalTitle = "";
   modalRating = "";
+  fakeArray= new Array(5);
   constructor(private _galleryData: GalleryService,private modalService: BsModalService) {
    }
 

@@ -55,8 +55,10 @@ export class MailusComponent implements OnInit {
     if(this.mailForm.valid){
       this._mailusData.mailusdata(this.mailForm.value).subscribe(
         data =>{
-          this.status=JSON.stringify(data);
-          if(this.status == '1'){
+         // Enable on service return
+          /*  this.status=JSON.stringify(data);
+          if(this.status == '1'){ */
+            if(data.length > 0){
             this.modalRef = this.modalService.show(template);
           }else{
             this.feedback = "Error in Sending Data. Contact Administrator.";

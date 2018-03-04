@@ -1,7 +1,7 @@
 <div class="rank_head_section">
   <h3 class="rank_header">Known <span>Technologies</span></h3>
 </div>
-<div class="container gal-container">
+<div class="container">
   <div class="col-md-4 col-sm-6 co-xs-12 gal-item" *ngFor = 'let lst of galleryData;let i = index'>
     <div class="box">
       <a href="javascript:void(0);" (click)="openModal(template,lst.ImageTitle,lst.ImageUrl,lst.ImageRating)">
@@ -21,6 +21,8 @@
       <img [src]="modalImageUrl" width="400" height="400">
     </div>
     <div class="modal-footer" >
-        <h4 class="modal-title pull-left">Rating : {{modalRating}}/5</h4>
+        <h4 class="modal-title pull-left">Rating : 
+            <span class="fa fa-star checked" [ngClass]="{'orange': (index+1 <= modalRating) }" *ngFor="let a of fakeArray; let index = index"></span>
+        </h4>  
     </div>
   </ng-template>

@@ -13,20 +13,19 @@ import {Router} from '@angular/router';
 export class LoginComponent implements OnInit {
   loginClick = false;
   loggedinClick = false;
-  login = new Login('', '');
+  login = new Login('', '','','',0);
   loginForm : FormGroup;
   status;
   username:String;
   isLoggedIn;
   emailid:String;
+  imageurl:string;
   errorText:String = "Invalid Login Credentials !";
   constructor(private _loginService:LoginService, private _route:Router) {
     this.username = sessionStorage.getItem('username');
     this.isLoggedIn =sessionStorage.getItem('isLoggedIn');
     this.emailid = sessionStorage.getItem('emailid');
-    /* console.log(this.username);
-    console.log(this.isLoggedIn);
-    console.log(this.emailid); */
+    this.imageurl = sessionStorage.getItem('imageurl');
    }
 
   ngOnInit() {
@@ -48,21 +47,30 @@ export class LoginComponent implements OnInit {
 
       this._loginService.login(formDir).subscribe(
         data => {
-          this.status = data.status;
-          this.username = data.username;
-          this.emailid = data.emailid;
-          console.log(this.username);
-            if(this.status == 1){
-              // localStorage.setItem('isLoggedIn', '1');
+          // Outer if condition for static login check if post request is made no need
+          if(data.emailid == formDir.value["email"] && data.password == formDir.value["password"])
+          {
+              this.status = data.status;
+              this.username = data.username;
+              this.imageurl = data.imageurl;
+              this.emailid = data.emailid;
+              if(this.status == 1){
               sessionStorage.isLoggedIn = 1;
               sessionStorage.username = this.username;
               sessionStorage.emailid = this.emailid;
+              sessionStorage.imageurl = this.imageurl;
               this.isLoggedIn =sessionStorage.isLoggedIn;
               this._route.navigate(['/home']);
             }else{
-              this.isLoggedIn =0;
+              this.isLoggedIn =0
+              this.status = 0;
               sessionStorage.isLoggedIn = 0;
             }
+          }else{
+            this.isLoggedIn =null;
+            this.status = 0;
+            sessionStorage.isLoggedIn = 0;
+          }
          }
       );
     }else {

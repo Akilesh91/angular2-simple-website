@@ -9,9 +9,10 @@ import { Maillus } from './maillus';
 @Injectable()
 export class MailusService {
 
-  private _mailusurl='http://localhost/school/mailus.php';
+  //private _mailusurl='http://localhost/school/mailus.php';
+  private _mailusurl='assets/json/mailus.json';
   constructor(private _http: Http){ }
-
+  mailus : Maillus[];
   mailusdata(formData): Observable<Maillus[]> {
    /* console.log(formData.value);
     let headers = new Headers({
@@ -28,10 +29,17 @@ export class MailusService {
     var params = "json="+json;
     var headers = new Headers();
     headers.append('Content-Type','application/x-www-form-urlencoded');
-    return this._http.post(this._mailusurl,params,{headers:headers})
+   // Enable if web service is called
+    /* return this._http.post(this._mailusurl,params,{headers:headers})
     .map((response: Response) => response.json())
-    /* .do(status =>JSON.stringify(status)) */
+    .catch(this.handleError); */
+    return this._http.get(this._mailusurl)
+    .map((response: Response) => <Maillus[]> response.json())
+    .do(data => {
+      this.mailus =data; 
+     })
     .catch(this.handleError);
+    
  }
 
   private handleError(error: Response) {

@@ -9,6 +9,7 @@
   "ProjectRole": "Devloper & Deployment Support",
   "ProjectTechnologies": "CodeIgniter, JQuery & MSSQL",
   "ProjectUrl": "www.nissanconnect.in",
+  "ProjectImageUrl": "assets/images/rankholders/nissan.png",
   "ProjectStatus" : 1
   },
   {
@@ -21,6 +22,7 @@
     "ProjectRole": "Full Stack Developer",
     "ProjectTechnologies": "Opigno LMS & MySQL",
     "ProjectUrl": "Offline",
+    "ProjectImageUrl": "assets/images/rankholders/welspun.png",
     "ProjectStatus" : 1
     },
     {
@@ -33,6 +35,7 @@
       "ProjectRole": "Developer",
       "ProjectTechnologies": "CodeIgniter, Angular & MySQL",
       "ProjectUrl": "Offline Application",
+      "ProjectImageUrl": "assets/images/rankholders/jc.jpg",
       "ProjectStatus" : 1
       },
       {
@@ -45,6 +48,7 @@
         "ProjectRole": "Content Manager",
         "ProjectTechnologies": "Drupal 7",
         "ProjectUrl": "www.srmuniv.ac.in",
+        "ProjectImageUrl": "assets/images/rankholders/srm.png",
         "ProjectStatus" : 1
         },
         {
@@ -56,7 +60,8 @@
           "ProjectClient": "Sucheta Kamath, Cerebral Matters",
           "ProjectRole": "Developer & Deployment",
           "ProjectTechnologies": "Moodle 3.3, SCORM 2004, Angular 2 & MySQL",
-          "ProjectUrl": "www.myexquest.com/lms",
+          "ProjectUrl": "www.myexquest.com",
+          "ProjectImageUrl": "assets/images/rankholders/cm.jpg",
           "ProjectStatus" : 0
           }
 ]
