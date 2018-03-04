@@ -60,7 +60,7 @@ export class LoginComponent implements OnInit {
               sessionStorage.emailid = this.emailid;
               sessionStorage.imageurl = this.imageurl;
               this.isLoggedIn =sessionStorage.isLoggedIn;
-              this._route.navigate(['/home']);
+              this._route.navigate(['/resume']);
             }else{
               this.isLoggedIn =0
               this.status = 0;

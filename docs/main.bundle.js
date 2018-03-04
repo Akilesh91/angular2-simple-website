@@ -886,7 +886,7 @@ var LoginComponent = (function () {
                         sessionStorage.emailid = _this.emailid;
                         sessionStorage.imageurl = _this.imageurl;
                         _this.isLoggedIn = sessionStorage.isLoggedIn;
-                        _this._route.navigate(['/home']);
+                        _this._route.navigate(['/resume']);
                     }
                     else {
                         _this.isLoggedIn = 0;
