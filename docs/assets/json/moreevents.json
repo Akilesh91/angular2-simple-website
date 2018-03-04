@@ -5,7 +5,7 @@
     "EventStartDate":"08-25-2014",
     "EventEndDate":"08-25-2014",
     "EventOrganizer": "AMCAT",
-    "EventImageUrl": "angular2-simple-website/assets/images/event/5.jpg",
+    "EventImageUrl": "assets/images/event/5.jpg",
     "EventContactNo":987654321
   },
   {
@@ -15,7 +15,7 @@
     "EventStartDate":"4-02-2014",
     "EventEndDate":"4-02-2014",
     "EventOrganizer": "AMCAT",
-    "EventImageUrl": "angular2-simple-website/assets/images/event/5.jpg",
+    "EventImageUrl": "assets/images/event/5.jpg",
     "EventContactNo":987654321
   },
   {
@@ -25,7 +25,7 @@
     "EventStartDate":"05-04-2013",
     "EventEndDate":"05-04-2013",
     "EventOrganizer": "Anja College",
-    "EventImageUrl": "angular2-simple-website/assets/images/event/5.jpg",
+    "EventImageUrl": "assets/images/event/5.jpg",
     "EventContactNo":987654321
   },
   {
@@ -35,7 +35,7 @@
     "EventStartDate":"12-02-2014",
     "EventEndDate":"12-02-2014",
     "EventOrganizer": "Devanga Arts & Science College",
-    "EventImageUrl": "angular2-simple-website/assets/images/event/5.jpg",
+    "EventImageUrl": "assets/images/event/5.jpg",
     "EventContactNo":987654321
   },
   {
@@ -45,7 +45,7 @@
     "EventStartDate":"11-02-2012",
     "EventEndDate":"11-02-2012",
     "EventOrganizer": "S.S. Duraisamy Nadar College",
-    "EventImageUrl": "angular2-simple-website/assets/images/event/5.jpg",
+    "EventImageUrl": "assets/images/event/5.jpg",
     "EventContactNo":987654321
   },
   {
@@ -55,7 +55,7 @@
     "EventStartDate":"09-10-2013",
     "EventEndDate":"09-10-2013",
     "EventOrganizer": "KLN College of Engineering",
-    "EventImageUrl": "angular2-simple-website/assets/images/event/5.jpg",
+    "EventImageUrl": "assets/images/event/5.jpg",
     "EventContactNo":987654321
   },
   {
@@ -65,7 +65,7 @@
     "EventStartDate":"10-09-2010",
     "EventEndDate":"10-09-2010",
     "EventOrganizer": "Chennai Science Forum",
-    "EventImageUrl": "angular2-simple-website/assets/images/event/5.jpg",
+    "EventImageUrl": "assets/images/event/5.jpg",
     "EventContactNo":987654321
   }
 ]
