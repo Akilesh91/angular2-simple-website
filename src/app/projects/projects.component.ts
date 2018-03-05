@@ -93,7 +93,7 @@ export class ProjectComponent implements OnInit {
     this.ProjectRoleDesc =ProjectRoleDesc;
     this.ProjectStatus =ProjectStatus;
     this.ProjectStatus = "On Going"
-    if(this.ProjectStatus == 1){
+    if(ProjectStatus == 1){
       this.ProjectStatus = "Completed";
     }
     this.ProjectUrl = ProjectUrl;

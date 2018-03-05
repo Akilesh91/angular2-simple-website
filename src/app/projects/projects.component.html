@@ -47,7 +47,7 @@
 </div>
 <ng-template #template>
   <div class="modal-header" >
-    
+
     <h4 class="modal-title pull-left"><img [src]="ProjectImageUrl" alt="Client Image" class="img-responsive img-circle " width="64px" height="64px"/>{{ProjectTitle}}</h4>
     <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
       <span aria-hidden="true">&times;</span>
@@ -79,14 +79,14 @@
               <label>Project Technologies:</label>
               {{ProjectTechnologies}}
           </div>
-          
+
           <div class="form-group">
-              <label>Project Technologies:</label>
+              <label>Project Status:</label>
               {{ProjectStatus}}
           </div>
           <div class="form-group">
               <label>Project Url:</label>
               {{ProjectUrl}}
-          </div>   
-    </div>     
+          </div>
+    </div>
 </ng-template>
