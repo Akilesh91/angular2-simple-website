@@ -1,7 +1,7 @@
 [
   {
   "ProjectID"  : 1,
-  "ProjectTitle" : "NissanConnect",
+  "ProjectTitle" : "NissanConnect - Nissan India",
   "ProjectDesc": "NissanConnect is an online application which comes up with 50+ connected features to make the travel experience convenient and much better. The primary functionality about the application is the Nissan Cars can transfers the GPS data,   car speed, acceleration and fuel consumption details. So, with these data the application is developed with 50+ features. Some of them are, Curfew Alert, Geo Fencing Alert, Location Alert, Speed Alert, Service Book alert etc... Also, customer can able to find out the nearest fuel stations, mange the trips, events and see their family/friends locations. It offers separate portal for dealer, Service station, Network management and Community members.",
   "ProjectStartDate": "25-09-2016",
   "ProjectEndDate": "15-07-2017",
@@ -40,8 +40,8 @@
       },
       {
         "ProjectID"  : 4,
-        "ProjectTitle" : "SRM University",
-        "ProjectDesc": "This system is developed for SRM university college. It is designed with more customized views and modules based on the client needs.",
+        "ProjectTitle" : "SRM Institute of Science and Technology",
+        "ProjectDesc": "This system is developed for SRM Institute of Science and Technology college. It is designed with more customized views and modules based on the client needs.",
         "ProjectStartDate": "01-08-2015",
         "ProjectEndDate": "30-12-2015",
         "ProjectClient": "SRM University",
