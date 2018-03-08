@@ -4,7 +4,8 @@ body{
 }
 .banner_nav {
     margin: 0 auto;
-    width: 92%;
+    width: auto;
+    overflow: hidden;
 }
 
 
