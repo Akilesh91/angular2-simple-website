@@ -12,8 +12,8 @@
     </div>
   </div>
 -->
-<div class="table-responsive">
-  <table class="table table-hover" style="min-height:450px">
+
+  <table class="table table-hover table-responsive " style="min-height:450px">
     <thead>
       <tr>
         <th class="text-center">#</th>
@@ -38,13 +38,12 @@
       </tr>
     </tbody>
   </table>
-</div>
   <!-- Pagination Code Starts Here -->
   <div class="row">
     <div class="col-xs-12 col-12" *ngIf="totalItems">
       <pagination [itemsPerPage]="itemsPerPage" [totalItems]="totalItems" [maxSize]="maxSize" class="pagination-sm" [boundaryLinks]="true" [rotate]="false" (numPages)="numPages = $event" (pageChanged)="pageChanged($event)"></pagination>
     </div>
-  
+
   </div>
   </div>
 </div>
