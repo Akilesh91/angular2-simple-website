@@ -1,5 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
-
+import {TranslateService} from 'ng2-translate';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
   navClass = '';
   shortcodeClick = false;
   isLoggedIn;
-  constructor(){
+  constructor(private translate : TranslateService){
     this.isLoggedIn =sessionStorage.getItem('isLoggedIn');
 
   }

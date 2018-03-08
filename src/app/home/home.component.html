@@ -5,11 +5,11 @@
     <div class="col-md-8">
         <div class="feature">
             <img src="assets/images/about.jpg" alt="about" class="img-responsive img-circle " width="200px" height="200px"/>
-              <h3>Web Developer</h3>
+              <h3>{{ 'homelang.webdeveloper' | translate }}</h3>
               <div class="title_border"></div>
               <p>Hello all a little about me !!! </p>
               <p>I'm Akilesh from Chennai. I'm a Post Graduate MCA degree holder. I'm having a 2+ years of experience in website development. Currently, I'm working in SRM Technologies Pvt Ltd., Chennai. So far, I had worked in 5 projects and I'm experienced in the following technologies like HTML, PHP, CodeIgniter,Moodle LMS,  Bootstrap, jQuery, MySQL and Angular 2. For freelancing or full Time work please reach me out !!</p>
-              <p>e-mail: <a href="mailto:akileshbsc91@gmail.com" target="_top">akileshbsc91@gmail.com</a></p>
+              <p><span class="glyphicon glyphicon-envelope"></span> : <a href="mailto:akileshbsc91@gmail.com" target="_top">akileshbsc91@gmail.com</a></p>
               <address>
                     Visit me at:<br>
                     BSR Apartment, Block-2, Flat-F2 <br>
@@ -23,7 +23,7 @@
               <div class="panel-heading">
                   <h3 class="panel-title">
                       <span class="glyphicon glyphicon-education"></span> 
-                      Acheivements
+                      {{ 'homelang.achievements' | translate }}
                   </h3>
               </div>
               <div class="panel-body">
@@ -51,7 +51,7 @@
                           </div>
                       </li>
                   </ul>
-                  <a [routerLink] = "['/moreevents']" class="btn btn-default btn-block moreevents">More Achievements »</a>
+                  <a [routerLink] = "['/moreevents']" class="btn btn-default btn-block moreevents">{{ 'homelang.moreachievements' | translate }} »</a>
               </div>
           </div>
     <!-- End fluid width widget -->
@@ -65,25 +65,25 @@
 			<div class="col-md-3 stats_left w3_counter_grid">
 				<i class="fa fa-child" aria-hidden="true"></i>
 				<p class="counter">{{count1}}%</p>
-                <h3>SSLC</h3>
+                <h3>{{ 'homelang.sslc' | translate }}</h3>
                 <h4>2007 - 2008</h4>
 			</div>
 			<div class="col-md-3 stats_left w3_counter_grid1">
 				<i class="fa fa-book" aria-hidden="true"></i>
 				<p class="counter">{{count2}}%</p>
-                <h3>HSC</h3>
+                <h3>{{ 'homelang.hsc' | translate }}</h3>
                 <h4>2009 - 2010</h4>
 			</div>
 			<div class="col-md-3 stats_left w3_counter_grid2">
 				<i class="fa fa-university" aria-hidden="true"></i>
 				<p class="counter">{{count3}}%</p>
-                <h3>UG - B.Sc </h3>
+                <h3>{{ 'homelang.ug' | translate }}</h3>
                 <h4>2010 - 2013</h4>
 			</div>
 			<div class="col-md-3 stats_left w3_counter_grid3">
 				<i class="fa fa-mortar-board" aria-hidden="true"></i>
 				<p class="counter">{{count4}}%</p>
-                <h3>PG - MCA</h3>
+                <h3>{{ 'homelang.pg' | translate }}</h3>
                 <h4>2013 - 2015</h4>
 			</div>
 			<div class="clearfix"> </div>
@@ -93,7 +93,7 @@
   <!-- Rank Holders -->
 <div class="container text-center">
     <div class="rank_head_section">
-        <h3 class="rank_header">Worked<span> Projects</span></h3>
+        <h3 class="rank_header">{{ 'homelang.worked' | translate }}<span> {{ 'homelang.projects' | translate }}</span></h3>
     </div>
   <carousel  [interval]=3000>
     <slide *ngFor = 'let lst of RankholdersData'>

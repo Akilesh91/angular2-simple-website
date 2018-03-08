@@ -4,6 +4,7 @@ import {Login} from './login';
 import {LoginService} from './login.service';
 import {Observable} from 'rxjs/Rx';
 import {Router} from '@angular/router';
+import {TranslateService} from 'ng2-translate';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -21,7 +22,7 @@ export class LoginComponent implements OnInit {
   emailid:String;
   imageurl:string;
   errorText:String = "Invalid Login Credentials !";
-  constructor(private _loginService:LoginService, private _route:Router) {
+  constructor(private _loginService:LoginService, private _route:Router,private translate : TranslateService) {
     this.username = sessionStorage.getItem('username');
     this.isLoggedIn =sessionStorage.getItem('isLoggedIn');
     this.emailid = sessionStorage.getItem('emailid');

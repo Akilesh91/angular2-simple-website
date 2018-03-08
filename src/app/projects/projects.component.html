@@ -1,7 +1,7 @@
 <div class="container text-center min-height" >
   <div class ="col-sm-12">
     <div class="rank_head_section">
-      <h3 class="rank_header">List <span>of Worked Projects</span></h3>
+      <h3 class="rank_header">{{ 'projectslang.listof' | translate }} <span>{{ 'projectslang.projects' | translate }}</span></h3>
   </div>
  <!--
   Enable HTTP service from API Search Will Work
@@ -12,15 +12,15 @@
     </div>
   </div>
 -->
-
-  <table class="table table-hover table-responsive ">
+<div class ="table-responsive">
+  <table class="table table-hover">
     <thead>
       <tr>
         <th class="text-center">#</th>
-        <th  class="text-left">Title</th>
-        <th  class="text-center">Start Date</th>
-        <th  class="text-center">End Date</th>
-        <th  class="text-center">Status</th>
+        <th  class="text-left">{{ 'projectslang.title' | translate }}</th>
+        <th  class="text-center">{{ 'projectslang.startdate' | translate }}</th>
+        <th  class="text-center">{{ 'projectslang.enddate' | translate }}</th>
+        <th  class="text-center">{{ 'projectslang.status' | translate }}</th>
       </tr>
     </thead>
     <tbody>
@@ -36,6 +36,7 @@
       </tr>
     </tbody>
   </table>
+</div>
   <!-- Pagination Code Starts Here -->
   <div class="row">
     <div class="col-xs-12 col-12" *ngIf="totalItems">
@@ -56,36 +57,36 @@
   <div class="modal-body">
         <p> {{ProjectDesc}}</p>
         <div class="form-group">
-            <label>Project Start Date:</label>
+            <label>{{ 'projectslang.projectstartdate' | translate }}</label>
             {{ProjectStartDate}}
           </div>
           <div class="form-group">
-            <label>Project End Date:</label>
+            <label>{{ 'projectslang.projectenddate' | translate }}</label>
             {{ProjectEndDate}}
           </div>
           <div class="form-group">
-            <label>Client:</label>
+            <label>{{ 'projectslang.client' | translate }}</label>
             {{ProjectClient}}
           </div>
           <div class="form-group">
-              <label>Project Role:</label>
+              <label>{{ 'projectslang.projectrole' | translate }}</label>
               {{ProjectRole}}
           </div>
           <div class="form-group">
-              <label>Project Description:</label>
+              <label>{{ 'projectslang.projectdescription' | translate }}</label>
               {{ProjectDesc}}
           </div>
           <div class="form-group">
-              <label>Project Technologies:</label>
+              <label>{{ 'projectslang.projecttechnologies' | translate }}</label>
               {{ProjectTechnologies}}
           </div>
 
           <div class="form-group">
-              <label>Project Status:</label>
+              <label>{{ 'projectslang.projectstatus' | translate }}</label>
               {{ProjectStatus}}
           </div>
           <div class="form-group">
-              <label>Project Url:</label>
+              <label>{{ 'projectslang.projecturl' | translate }}</label>
               {{ProjectUrl}}
           </div>
     </div>

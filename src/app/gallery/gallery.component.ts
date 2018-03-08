@@ -5,7 +5,7 @@ import { GalleryData } from '../gallery/gallery';
 import { GalleryService } from '../gallery/gallery.service';
 import { Http , Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
-
+import {TranslateService} from 'ng2-translate';
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
@@ -19,7 +19,7 @@ export class GalleryComponent implements OnInit {
   modalTitle = "";
   modalRating = "";
   fakeArray= new Array(5);
-  constructor(private _galleryData: GalleryService,private modalService: BsModalService) {
+  constructor(private _galleryData: GalleryService,private modalService: BsModalService,private translate : TranslateService) {
    }
 
   ngOnInit() {

@@ -4,15 +4,67 @@
     "phone": "Phone",
     "email": "Email",
     "message": "Message",
-    "send": "SEND"
+    "send": "Send"
   },
   "homelang":{
+    "webdeveloper":"Web Developer",
     "achievements":"Achievements",
     "sslc":"SSLC",
      "hsc" :"HSC",
      "ug":"UG - B.Sc",
      "pg": "PG - MCA",
      "worked": "Worked",
-     "projects":"Projects"
-  }
+     "projects":"Projects",
+     "moreachievements":"More Achievements",
+     "techieinside":"echie Inside",
+     "copyright":"All rights reserved Web Design & Development by Akilesh Kumar R"  
+  },
+  "navlang":{
+    "home":"Home",
+    "technologies":"Technologies",
+    "projects":"Projects",
+    "achievements":"Achievements",
+    "mailus":"Mail Us",
+    "resume":"Resume"
+  },
+  "loginlang":{
+    "login":"Login",
+    "email":"Email Address",
+    "password":"Password",
+    "forget":"Forgot password ?",
+    "newhere":"New here ?",
+    "logout":"Logout",
+    "signin":"Sign In",
+    "joinus":"Join Us"
+  },
+  "techlang":{
+    "technologies":"Technologies",
+    "known":"Known",
+    "rating":"Rating :" 
+  },
+  "projectslang":{
+    "listof":"List of",
+    "projects":"Worked Projects",
+    "title":"Title",
+    "startdate":"Start Date",
+    "enddate":"End Date",
+    "status":"Status",
+    "projectstartdate":"Project Start Date :",
+    "projectenddate":"Project End Date :",
+    "client":"Client :",
+    "projectrole":"Project Role :",
+    "projectdescription":"Project Description :",
+    "projecttechnologies":"Project Technologies :",
+    "projectstatus":"Project Status :",
+    "projecturl":"Project Url :"  
+  },
+  "achievementslang":{
+    "achievements":"Achievements",
+    "event":"Event",
+    "description":"Description",
+    "eventdate":"Event Date",
+    "organizer":"Organizer",
+    "listof":"List of "
+  }  
+
 }

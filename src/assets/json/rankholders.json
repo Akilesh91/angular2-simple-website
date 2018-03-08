@@ -1,7 +1,7 @@
 [{
     "StudentID": 1,
     "ImageUrl": "assets/images/rankholders/nissan.png",
-    "StudentName": "NissanConnect - Nissan India",
+    "StudentName": "NissanConnect - Nissan Motors India",
     "StudentTitle": "Chennai",
     "StudentDesc": "NissanConnect is an online application which comes up with 50+ connected features to make the travel experience convenient and much better. The primary functionality about the application is the Nissan Cars can transfers the GPS data,   car speed, acceleration and fuel consumption details. So, with these data the application is developed with 50+ features. Some of them are, Curfew Alert, Geo Fencing Alert, Location Alert, Speed Alert, Service Book alert etc... Also, customer can able to find out the nearest fuel stations, mange the trips, events and see their family/friends locations. It offers separate portal for dealer, Service station, Network management and Community members."
   },
@@ -29,7 +29,7 @@
   {
     "StudentID": 5,
     "ImageUrl": "assets/images/rankholders/cm.jpg",
-    "StudentName": "Cerebral Matters - LMS",
+    "StudentName": "EXQ – Cerebral Matters LMS",
     "StudentTitle": "United States",
     "StudentDesc": "This application is designed to train the brain dysfunction. By training with this application the end user is able to improvise the brain execution in various domains like complex attention, perspective taking, time management, working memory etc… Based on the survey results taken up by the customer, the training is automatically provided. Over 30 games is developed to train the brain in various domain using SCORM compliance."
   }

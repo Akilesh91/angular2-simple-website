@@ -6,6 +6,7 @@ import { RankholdersService } from '../rankholders/rankholders.service';
 import {EventData} from '../moreevents/moreevents'
 import {MoreeventsService} from '../moreevents/moreevents.service';
 import { Http , Response } from '@angular/http';
+import {TranslateService} from 'ng2-translate';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -30,7 +31,7 @@ export class HomeComponent implements OnInit {
   modalTitle="";
   modalDesc="";
   modalImageUrl ="";
-  constructor(private _rankholdersData: RankholdersService,private _moreeeventsData: MoreeventsService,  private modalService: BsModalService) {
+  constructor(private _rankholdersData: RankholdersService,private _moreeeventsData: MoreeventsService,  private modalService: BsModalService, private translate : TranslateService) {
        /* Timer Code Starts Here */
        this._timerTick();
    }

@@ -1,6 +1,6 @@
 <ul class="nav navbar-nav navbar-right"  *ngIf="isLoggedIn == null">
 <li [ngClass]="{'dropdown open': loginClick }" class="dropdown" (click)="loginClick=!loginClick" >
-    <a href="javascript:void(0)" class="dropdown-toggle hvr-ripple-in" data-toggle="dropdown">Login <b class="fa fa-caret-down" aria-hidden="true"></b></a>
+    <a href="javascript:void(0)" class="dropdown-toggle hvr-ripple-in" data-toggle="dropdown">{{ 'loginlang.login' | translate }} <b class="fa fa-caret-down" aria-hidden="true"></b></a>
     <ul class="dropdown-menu short_dropdown" id ="login-dp" >
         <div class="row">
             <div class="col-md-12">
@@ -9,7 +9,7 @@
              </div>
               <form class="form" role="form" [formGroup] ="loginForm"  #formDir="ngForm" accept-charset="UTF-8" id="login-nav">
                   <div class="form-group">
-                     <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                     <label class="sr-only" for="exampleInputEmail2">{{ 'loginlang.email' | translate }}</label>
                      <input type="email" class="form-control" formControlName ="email" placeholder="Email address" required (click)="loginClick=!loginClick">
                      <div *ngIf="email.invalid && (email.dirty || email.touched)"
                      class="alert alert-danger">
@@ -19,7 +19,7 @@
                     </div>
                   </div>
                   <div class="form-group">
-                     <label class="sr-only" for="exampleInputPassword2">Password</label>
+                     <label class="sr-only" for="exampleInputPassword2">{{ 'loginlang.password' | translate }}</label>
                      <input type="password" class="form-control"  formControlName ="password"  id="exampleInputPassword2" placeholder="Password" required (click)="loginClick=!loginClick">
                      <div *ngIf="password.invalid && (password.dirty || password.touched)"
                      class="alert alert-danger">
@@ -27,15 +27,15 @@
                          Password is required.
                        </div>
                     </div>
-                     <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                     <div class="help-block text-right"><a href="">{{ 'loginlang.forget' | translate }}</a></div>
                   </div>
                   <div class="form-group">
-                     <button type="submit" class="btn btn-primary btn-block" (click)="submitForm(formDir)">Sign in</button>
+                     <button type="submit" class="btn btn-primary btn-block" (click)="submitForm(formDir)">{{ 'loginlang.signin' | translate }}</button>
                   </div>
                </form>
             </div>
             <div class="bottom text-center">
-              New here ? <a href="#"><b>Join Us</b></a>
+              {{ 'loginlang.newhere' | translate }} <a href="#"><b>{{ 'loginlang.joinus' | translate }}</b></a>
             </div>
          </div>
     </ul>
@@ -56,7 +56,7 @@
               <p class="text-left"><strong>{{username}}</strong></p>
               <p class="text-left small">{{emailid}}</p>
               <p class="text-left">
-                  <button  class="btn btn-primary btn-block btn-sm" (click)="logout()">Logout</button>
+                  <button  class="btn btn-primary btn-block btn-sm" (click)="logout()">{{ 'loginlang.logout' | translate }}</button>
               </p>
           </div>
       </div>

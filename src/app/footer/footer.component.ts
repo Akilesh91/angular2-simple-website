@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {TranslateService} from 'ng2-translate';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   copyright:Date;
-  constructor() { 
+  constructor(private translate : TranslateService) { 
     this.copyright = new Date();
   }
 

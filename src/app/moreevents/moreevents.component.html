@@ -1,7 +1,7 @@
 <div class="container text-center min-height" >
   <div class ="col-sm-12">
     <div class="rank_head_section">
-      <h3 class="rank_header">List <span>of Achievements</span></h3>
+      <h3 class="rank_header">{{ 'achievementslang.listof' | translate }} <span>{{ 'achievementslang.achievements' | translate }}</span></h3>
   </div>
  <!-- 
   Enable HTTP service from API Search Will Work 
@@ -12,15 +12,15 @@
     </div>
   </div>
 -->
-
-  <table class="table table-hover table-responsive " style="min-height:450px">
+<div class="table-responsive">
+  <table class="table table-hover" style="min-height:450px">
     <thead>
       <tr>
         <th class="text-center">#</th>
-        <th  class="text-center">Event</th>
-        <th  class="text-center">Description</th>
-        <th  class="text-center">Event Date</th>
-        <th  class="text-center">Organizer</th>
+        <th  class="text-center">{{ 'achievementslang.event' | translate }}</th>
+        <th  class="text-center">{{ 'achievementslang.description' | translate }}</th>
+        <th  class="text-center">{{ 'achievementslang.eventdate' | translate }}</th>
+        <th  class="text-center">{{ 'achievementslang.organizer' | translate }}</th>
         <!--<th  class="text-center">End Date</th>-->
       </tr>
     </thead>
@@ -38,12 +38,13 @@
       </tr>
     </tbody>
   </table>
+</div>
   <!-- Pagination Code Starts Here -->
   <div class="row">
     <div class="col-xs-12 col-12" *ngIf="totalItems">
       <pagination [itemsPerPage]="itemsPerPage" [totalItems]="totalItems" [maxSize]="maxSize" class="pagination-sm" [boundaryLinks]="true" [rotate]="false" (numPages)="numPages = $event" (pageChanged)="pageChanged($event)"></pagination>
     </div>
-
+  
   </div>
   </div>
 </div>

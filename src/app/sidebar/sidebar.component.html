@@ -5,7 +5,7 @@
         <slide *ngFor = 'let lst of bannerData'>
           <img [src]="lst.BannerUrl" alt="Slide {{lst.index}}" style="display: block; width: 100%; ">
           <div class="carousel-caption">
-            <h3>{{lst.BannerTitle}}</h3>
+            <h4>{{lst.BannerTitle}}</h4>
             <p>{{lst.BannerDesc}}</p>
           </div>
         </slide>

@@ -7,12 +7,64 @@
     "send": "அனுப்பு"
   },
   "homelang":{
+    "webdeveloper":"இனையதள வடிவமைப்பாளர்",
     "achievements":"சாதனைகள்",
     "sslc":"எஸ்எஸ்எல்சி",
      "hsc" :"மேல்நிலைப்பள்ளி",
      "ug":"இளங்கலை - B.Sc",
      "pg": "முதுகலை - MCA",
      "worked": "வேலை",
-     "projects":"திட்டங்கள்"
-  }
+     "projects":"திட்டங்கள்",
+     "moreachievements": "மேலும் சாதனைகள்",
+     "techieinside": "டெக்கி உள்ளே",
+     "copyright":"அகிலேஷ் குமார் ஆர் வழங்குவதன் மூலம் வலை வடிவமைப்பு மற்றும் மேம்பாடு அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை"
+  },
+  "navlang":{
+    "home":"முகப்பு",
+    "technologies":"தொழில்நுட்பங்கள்",
+    "projects":"திட்டங்கள்",
+    "achievements":"சாதனைகள்",
+    "mailus":"மின்னஞ்சல்",
+    "resume":"தற்குறிப்பு"
+  },
+  "loginlang":{
+    "login":"உள் நுழை",
+    "email":"மின்னஞ்சல் முகவரி",
+    "password":"கடவுச்சொல்",
+    "forget":"கடவுச்சொல்லை மறந்துவிட்டீர்களா ?",
+    "newhere":"புதியது இங்கே ?",
+    "logout":"வெளியேறு",
+    "signin":"உள்நுழைக",
+    "joinus":"எங்களுடன் சேர்"
+
+  },
+  "techlang":{
+    "technologies":"தொழில்நுட்பங்கள்",
+    "known":"அறிந்த ",
+    "rating":"மதிப்பீடு :" 
+  },
+  "projectslang":{
+    "listof":"திட்டங்களின்",
+    "projects":"பட்டியல்",
+    "title":"தலைப்பு",
+    "startdate":"தொடக்க தேதி",
+    "enddate":"கடைசி தேதி",
+    "status":"நிலை",
+    "projectstartdate":"திட்ட தொடக்க தேதி :",
+    "projectenddate":"திட்ட முடிவு தேதி :",
+    "client":"வாடிக்கையாளர் :",
+    "projectrole":"திட்டப்பணி :",
+    "projectdescription":"திட்ட விளக்கம் :",
+    "projecttechnologies":"திட்ட தொழில்நுட்பங்கள் :",
+    "projectstatus":"திட்ட நிலை :",
+    "projecturl":"திட்ட Url :"  
+  },
+  "achievementslang":{
+    "achievements":"பட்டியல்",
+    "event":"நிகழ்வு",
+    "description":"விளக்கம்",
+    "eventdate":"நிகழ்வு தேதி",
+    "organizer":"அமைப்பாளர்",
+    "listof":"சாதனைகளின்"
+  }  
 }

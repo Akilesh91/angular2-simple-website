@@ -8,6 +8,7 @@ import { Observable } from 'rxjs/Observable';
 import { SlicePipe } from '@angular/common';
 
 import 'rxjs/add/operator/map';
+import {TranslateService} from 'ng2-translate';
 @Component({
   selector: 'app-moreevents',
   templateUrl: './projects.component.html',
@@ -38,7 +39,7 @@ export class ProjectComponent implements OnInit {
   ProjectImageUrl = "";
   terms ="";
   emptyData=false;
-  constructor(private _projectData: ProjectService,private modalService: BsModalService) {
+  constructor(private _projectData: ProjectService,private modalService: BsModalService,private translate : TranslateService) {
    }
 
    pageChanged(event: any): void {

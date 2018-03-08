@@ -399,9 +399,9 @@ a.navbar-brand {
 }
 
 .test-grid1 {
-    margin: 0 auto 2em;
+    margin: 0 25em 2em;
     text-align: center;
-    width: 40%;
+    width: auto;
 }
 
 .test-grid {
@@ -410,11 +410,12 @@ a.navbar-brand {
 
 .test-grid2 {
     float: left;
+    margin: 0 12em 0;
 }
 
 .test-grid2_text {
     float: left;
-    margin-left: 1em;
+    margin-left: 5em;
     text-align: center;
 }
 .test-grid h4 {
@@ -806,5 +807,21 @@ input[type="button"]:hover {
     @keyframes spin {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
+    }
+    .test-grid1 {
+        margin: 0 2em 2em;
+        text-align: center;
+        width: auto;
+    }
+    
+    .test-grid2 {
+        float: left;
+        margin: 0 7em 0;
+    }
+    .test-grid2_text {
+        float: left;
+        margin-left: 1em;
+        text-align: center;
+        position: relative;
     }
 }
