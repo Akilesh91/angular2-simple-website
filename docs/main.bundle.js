@@ -137,7 +137,7 @@ var AppComponent = (function () {
             if (!(evt instanceof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* NavigationEnd */])) {
                 return;
             }
-            window.scrollTo(0, 550);
+            window.scrollTo(0, 650);
         });
     };
     AppComponent = __decorate([
@@ -1985,7 +1985,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/sidebar/sidebar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container banner\">\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-12\">\r\n      <carousel [interval]=3000>\r\n        <slide *ngFor = 'let lst of bannerData'>\r\n          <img [src]=\"lst.BannerUrl\" alt=\"Slide {{lst.index}}\" style=\"display: block; width: 100%; \">\r\n          <div class=\"carousel-caption\">\r\n            <h4>{{lst.BannerTitle}}</h4>\r\n            <p>{{lst.BannerDesc}}</p>\r\n          </div>\r\n        </slide>\r\n      </carousel>\r\n    </div>\r\n  </div>\r\n  <hr>\r\n  </div>"
+module.exports = "<div class=\"container banner\">\r\n  <div class=\"banner-top\"></div>\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-12\">\r\n      <carousel [interval]=3000>\r\n        <slide *ngFor = 'let lst of bannerData'>\r\n          <img [src]=\"lst.BannerUrl\" alt=\"Slide {{lst.index}}\" style=\"display: block; width: 100%; \">\r\n          <div class=\"carousel-caption\">\r\n            <h4>{{lst.BannerTitle}}</h4>\r\n            <p>{{lst.BannerDesc}}</p>\r\n          </div>\r\n        </slide>\r\n      </carousel>\r\n    </div>\r\n  </div>\r\n  <hr>\r\n  </div>"
 
 /***/ }),
 

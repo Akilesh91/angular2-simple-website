@@ -22,7 +22,7 @@ export class AppComponent {
         if (!(evt instanceof NavigationEnd)) {
             return;
         }
-        window.scrollTo(0, 550)
+        window.scrollTo(0, 650);
     });
 }
 }

@@ -10,7 +10,10 @@ body{
     background: white;
     padding: 0px 0px 0 30px;
 }
-
+.banner-top{
+    width: 100%;
+    height: 99px;
+}
 
 /*-- nav --*/
 
