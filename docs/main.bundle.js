@@ -99,7 +99,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\r\n<div class = \"lang\">\r\n    <img width = \"30\" height = \"30\" alt = \"en\" src = \"assets/images/lang/en.jpg\" (click)='lang.setDefaultLang(selectedLang=\"en\")'/>\r\n    <img width = \"30\" height = \"30\" alt = \"fr\" src = \"assets/images/lang/tn.jpg\" (click)='lang.setDefaultLang(selectedLang=\"fr\")'/>\r\n</div>\r\n<app-sidebar></app-sidebar>\r\n<router-outlet></router-outlet>\r\n<app-footer></app-footer>"
+module.exports = "<app-navbar></app-navbar>\r\n<div class = \"lang\">\r\n    <img width = \"30\" height = \"30\" alt = \"en\" src = \"assets/images/lang/en.jpg\" (click)='lang.setDefaultLang(selectedLang=\"en\")'/>\r\n    <img width = \"30\" height = \"30\" alt = \"fr\" src = \"assets/images/lang/tn.jpg\" (click)='lang.setDefaultLang(selectedLang=\"fr\")'/>\r\n    <img width = \"30\" height = \"30\" alt = \"jp\" src = \"assets/images/lang/jp.jpg\" (click)='lang.setDefaultLang(selectedLang=\"jp\")'/>\r\n</div>\r\n<app-sidebar></app-sidebar>\r\n<router-outlet></router-outlet>\r\n<app-footer></app-footer>"
 
 /***/ }),
 
@@ -786,7 +786,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var LangService = (function () {
     function LangService(translate) {
         this.translate = translate;
-        translate.addLangs(["en", "fr"]);
+        translate.addLangs(["en", "fr", "jp"]);
         /*
         translate.setDefaultLang(defaultLang);
         let browserLang = translate.getBrowserLang();

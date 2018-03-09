@@ -1,0 +1,70 @@
+{
+    "mailformlang": {
+      "fullname": "フルネーム",
+      "phone": "電話",
+      "email": "Eメール",
+      "message": "メッセージ",
+      "send": "送信"
+    },
+    "homelang":{
+      "webdeveloper":"ウェブ開発者",
+      "achievements":"実績",
+      "sslc":"SSLC",
+       "hsc" :"HSC",
+       "ug":"UG - B.Sc",
+       "pg": "PG - MCA",
+       "worked": "働いた",
+       "projects":"プロジェクト",
+       "moreachievements":"その他の成果",
+       "techieinside":"テイチー",
+       "copyright":"All rights reserved Web Design & Development by Akilesh Kumar R"
+    },
+    "navlang":{
+      "home":"ホーム",
+      "technologies":"テクノロジー",
+      "projects":"プロジェクト",
+      "achievements":"実績",
+      "mailus":"メールでお問い合わせください",
+      "resume":"履歴書"
+    },
+    "loginlang":{
+      "login":"ログイン",
+      "email":"電子メールアドレス",
+      "password":"パスワード",
+      "forget":"パスワードをお忘れですか ？",
+      "newhere":"ここに新しい？",
+      "logout":"ログアウト",
+      "signin":"サインイン",
+      "joinus":"参加しませんか"
+    },
+    "techlang":{
+      "technologies":"テクノロジー",
+      "known":"既知の",
+      "rating":"評価："
+    },
+    "projectslang":{
+      "listof":"リスト ",
+      "projects":"働いたプロジェクト",
+      "title":"タイトル",
+      "startdate":"開始日",
+      "enddate":"終了日",
+      "status":"状態",
+      "projectstartdate":"プロジェクト開始日：",
+      "projectenddate":"プロジェクト終了日：",
+      "client":"クライアント：",
+      "projectrole":"プロジェクトの役割：",
+      "projectdescription":"プロジェクトの説明 ：",
+      "projecttechnologies":"プロジェクト技術：",
+      "projectstatus":"プロジェクトの状況：",
+      "projecturl":"プロジェクトURL："
+    },
+    "achievementslang":{
+      "achievements":"実績",
+      "event":"イベント",
+      "description":"説明",
+      "eventdate":"開催日",
+      "organizer":"主催者",
+      "listof":"リスト "
+    }
+
+  }
