@@ -133,12 +133,12 @@ var AppComponent = (function () {
         lang.setDefaultLang(this.selectedLang);
     }
     AppComponent.prototype.ngOnInit = function () {
-        this.router.events.subscribe(function (evt) {
-            if (!(evt instanceof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* NavigationEnd */])) {
+        /* this.router.events.subscribe((evt) => {
+            if (!(evt instanceof NavigationEnd)) {
                 return;
             }
             window.scrollTo(0, 650);
-        });
+        }); */
     };
     AppComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
@@ -147,7 +147,7 @@ var AppComponent = (function () {
             styles: [__webpack_require__("../../../../../src/app/app.component.css")],
             providers: [__WEBPACK_IMPORTED_MODULE_1__lang_lang_service__["a" /* LangService */]]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__lang_lang_service__["a" /* LangService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__lang_lang_service__["a" /* LangService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -248,7 +248,7 @@ var AppModule = (function () {
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_10__angular_http__["c" /* HttpModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_router__["c" /* RouterModule */].forRoot(appRoutes),
+                __WEBPACK_IMPORTED_MODULE_11__angular_router__["b" /* RouterModule */].forRoot(appRoutes),
                 __WEBPACK_IMPORTED_MODULE_9_ngx_bootstrap__["a" /* CarouselModule */].forRoot(),
                 __WEBPACK_IMPORTED_MODULE_9_ngx_bootstrap__["c" /* PaginationModule */].forRoot(),
                 __WEBPACK_IMPORTED_MODULE_9_ngx_bootstrap__["b" /* ModalModule */].forRoot(),
@@ -379,7 +379,7 @@ var ContactComponent = (function () {
             template: __webpack_require__("../../../../../src/app/contact/contact.component.html"),
             styles: [__webpack_require__("../../../../../src/app/contact/contact.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]])
     ], ContactComponent);
     return ContactComponent;
 }());
@@ -945,7 +945,7 @@ var LoginComponent = (function () {
             styles: [__webpack_require__("../../../../../src/app/login/login.component.css")],
             providers: [__WEBPACK_IMPORTED_MODULE_3__login_service__["a" /* LoginService */]]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__login_service__["a" /* LoginService */], __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_5_ng2_translate__["b" /* TranslateService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__login_service__["a" /* LoginService */], __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */], __WEBPACK_IMPORTED_MODULE_5_ng2_translate__["b" /* TranslateService */]])
     ], LoginComponent);
     return LoginComponent;
 }());
@@ -1955,7 +1955,7 @@ var ResumeComponent = (function () {
             template: __webpack_require__("../../../../../src/app/resume/resume.component.html"),
             styles: [__webpack_require__("../../../../../src/app/resume/resume.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]])
     ], ResumeComponent);
     return ResumeComponent;
 }());

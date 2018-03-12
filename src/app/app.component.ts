@@ -1,4 +1,4 @@
-import { Component, Input} from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 import {LangService} from './lang/lang.service';
 import { Router, NavigationEnd } from '@angular/router';
 
@@ -8,7 +8,7 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./app.component.css'],
   providers:[LangService]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'app';
   username;
   isLoggedIn = 0;
@@ -18,11 +18,11 @@ export class AppComponent {
       lang.setDefaultLang(this.selectedLang);
   }
   ngOnInit() {
-    this.router.events.subscribe((evt) => {
+    /* this.router.events.subscribe((evt) => {
         if (!(evt instanceof NavigationEnd)) {
             return;
         }
         window.scrollTo(0, 650);
-    });
+    }); */
 }
 }
