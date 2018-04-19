@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { Component, TemplateRef } from '@angular/core';
+import { Component, TemplateRef,enableProdMode } from '@angular/core';
 
 import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
@@ -28,7 +28,10 @@ import { LoginComponent } from './login/login.component';
 import {TranslateModule} from 'ng2-translate';
 import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
-
+import { environment } from '../environments/environment';
+if (environment.production) {
+  enableProdMode();
+}
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },

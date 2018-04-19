@@ -8,7 +8,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<h1><a class="navbar-brand"  [routerLink] = "['']"> <span>T</span>{{ 'homelang.techieinside' | translate }}</a></h1>
+					<h1><a class="navbar-brand"  [routerLink] = "['']"> <span>{{ 'homelang.techieinside' | translate | slice : 0 : 1 }}</span>{{ 'homelang.techieinside' | translate | slice : 1 }}</a></h1>
 
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->

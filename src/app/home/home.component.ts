@@ -17,7 +17,6 @@ export class HomeComponent implements OnInit {
   modalRef:BsModalRef;
   RankholdersData: RankholdersData[];
   MoreeventsData : EventData[];
-  
   start = 0;
   end = 3;
   count1= 0;
@@ -70,7 +69,7 @@ export class HomeComponent implements OnInit {
         if(this.MoreeventsData.length > 0){
           this.MoreeventsData =  this.MoreeventsData.slice(this.start,this.end);
         }
-      }      
+      }
     );
 
   }

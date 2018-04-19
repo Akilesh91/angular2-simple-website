@@ -16,8 +16,8 @@
      "worked": "Worked",
      "projects":"Projects",
      "moreachievements":"More Achievements",
-     "techieinside":"echie Inside",
-     "copyright":"All rights reserved Web Design & Development by Akilesh Kumar R"  
+     "techieinside":"Techie Inside",
+     "copyright":"All rights reserved Web Design & Development by Akilesh Kumar R"
   },
   "navlang":{
     "home":"Home",
@@ -40,7 +40,7 @@
   "techlang":{
     "technologies":"Technologies",
     "known":"Known",
-    "rating":"Rating :" 
+    "rating":"Rating :"
   },
   "projectslang":{
     "listof":"List of",
@@ -56,7 +56,7 @@
     "projectdescription":"Project Description :",
     "projecttechnologies":"Project Technologies :",
     "projectstatus":"Project Status :",
-    "projecturl":"Project Url :"  
+    "projecturl":"Project Url :"
   },
   "achievementslang":{
     "achievements":"Achievements",
@@ -65,6 +65,6 @@
     "eventdate":"Event Date",
     "organizer":"Organizer",
     "listof":"List of "
-  }  
+  }
 
 }

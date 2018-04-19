@@ -25,7 +25,7 @@ export class LoginService {
      return this._http.get(this._loginURL)
      .map((response: Response) =><Login[]> response.json())
      .catch(this.handleError);
-     
+
   }
   private handleError(error: Response) {
     console.error(error);

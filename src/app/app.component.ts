@@ -1,7 +1,6 @@
 import { Component, Input, OnInit} from '@angular/core';
 import {LangService} from './lang/lang.service';
 import { Router, NavigationEnd } from '@angular/router';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -15,7 +14,7 @@ export class AppComponent implements OnInit {
   emailid;
   selectedLang = "en";
   constructor(public lang : LangService,private router: Router) {
-      lang.setDefaultLang(this.selectedLang);
+    lang.setDefaultLang(this.selectedLang);
   }
   ngOnInit() {
     /* this.router.events.subscribe((evt) => {
