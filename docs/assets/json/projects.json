@@ -1,20 +1,20 @@
 [
   {
-  "ProjectID"  : 1,
-  "ProjectTitle" : "NissanConnect - Nissan India",
-  "ProjectDesc": "NissanConnect is an online application which comes up with 50+ connected features to make the travel experience convenient and much better. The primary functionality about the application is the Nissan Cars can transfers the GPS data,   car speed, acceleration and fuel consumption details. So, with these data the application is developed with 50+ features. Some of them are, Curfew Alert, Geo Fencing Alert, Location Alert, Speed Alert, Service Book alert etc... Also, customer can able to find out the nearest fuel stations, mange the trips, events and see their family/friends locations. It offers separate portal for dealer, Service station, Network management and Community members.",
-  "ProjectStartDate": "25-09-2016",
-  "ProjectEndDate": "15-07-2017",
-  "ProjectClient": "Nissan Motors",
-  "ProjectRole": "Devloper & Deployment Support",
-  "ProjectTechnologies": "CodeIgniter, JQuery & MSSQL",
-  "ProjectUrl": "www.nissanconnect.in",
-  "ProjectImageUrl": "assets/images/rankholders/nissan.png",
-  "ProjectStatus" : 1
+    "ProjectID": 1,
+    "ProjectTitle": "NissanConnect - Nissan India",
+    "ProjectDesc": "NissanConnect is an online application which comes up with 50+ connected features to make the travel experience convenient and much better. The primary functionality about the application is the Nissan Cars can transfers the GPS data,   car speed, acceleration and fuel consumption details. So, with these data the application is developed with 50+ features. Some of them are, Curfew Alert, Geo Fencing Alert, Location Alert, Speed Alert, Service Book alert etc... Also, customer can able to find out the nearest fuel stations, mange the trips, events and see their family/friends locations. It offers separate portal for dealer, Service station, Network management and Community members.",
+    "ProjectStartDate": "25-09-2016",
+    "ProjectEndDate": "15-07-2017",
+    "ProjectClient": "Nissan Motors",
+    "ProjectRole": "Devloper & Deployment Support",
+    "ProjectTechnologies": "CodeIgniter, JQuery & MSSQL",
+    "ProjectUrl": "www.nissanconnect.in",
+    "ProjectImageUrl": "assets/images/rankholders/nissan.png",
+    "ProjectStatus": 1
   },
   {
-    "ProjectID"  : 2,
-    "ProjectTitle" : "Welspun Recruitment Automation",
+    "ProjectID": 2,
+    "ProjectTitle": "Welspun Recruitment Automation",
     "ProjectDesc": "This system is designed to make the recruitment system automated. Welspun is largest textile company in India. More peoples are recruited every month and also they provide training for the existing employees. So in order to make the recruitment system easier and speed up the process this system is designed. For assessment related contents, SCORM 2004 is used and managing activities Opigno LMS is used.",
     "ProjectStartDate": "01-09-2017",
     "ProjectEndDate": "02-12-2017",
@@ -23,45 +23,58 @@
     "ProjectTechnologies": "Opigno LMS & MySQL",
     "ProjectUrl": "Offline",
     "ProjectImageUrl": "assets/images/rankholders/welspun.png",
-    "ProjectStatus" : 1
-    },
-    {
-      "ProjectID"  : 3,
-      "ProjectTitle" : "Jesus Calls Studio Management System",
-      "ProjectDesc": "This system is designed to keep track the overall process of the TV shows from making to the final stage. For each stage separate roles of people are reviewed for approval. Also, this will track those personal activities in their organization. For master data, AngularJS 1 is used to achieve the SPA concept.",
-      "ProjectStartDate": "15-08-2015",
-      "ProjectEndDate": "25-08-2016",
-      "ProjectClient": "Dr. Paul Dinakar",
-      "ProjectRole": "Developer",
-      "ProjectTechnologies": "CodeIgniter, Angular & MySQL",
-      "ProjectUrl": "Offline Application",
-      "ProjectImageUrl": "assets/images/rankholders/jc.jpg",
-      "ProjectStatus" : 1
-      },
-      {
-        "ProjectID"  : 4,
-        "ProjectTitle" : "SRM Institute of Science and Technology",
-        "ProjectDesc": "This system is developed for SRM Institute of Science and Technology college. It is designed with more customized views and modules based on the client needs.",
-        "ProjectStartDate": "01-08-2015",
-        "ProjectEndDate": "30-12-2015",
-        "ProjectClient": "SRM University",
-        "ProjectRole": "Content Manager",
-        "ProjectTechnologies": "Drupal 7",
-        "ProjectUrl": "www.srmuniv.ac.in",
-        "ProjectImageUrl": "assets/images/rankholders/srm.png",
-        "ProjectStatus" : 1
-        },
-        {
-          "ProjectID"  : 5,
-          "ProjectTitle" : "EXQ – Cerebral Matters LMS",
-          "ProjectDesc": "This application is designed to train the brain dysfunction. By training with this application the end user is able to improvise the brain execution in various domains like complex attention, perspective taking, time management, working memory etc… Based on the survey results taken up by the customer, the training is automatically provided. Over 30 games is developed to train the brain in various domain using SCORM compliance. ",
-          "ProjectStartDate": "27-08-2015",
-          "ProjectEndDate": "-",
-          "ProjectClient": "Sucheta Kamath, Cerebral Matters",
-          "ProjectRole": "Developer & Deployment",
-          "ProjectTechnologies": "Moodle 3.3, SCORM 2004, Angular 2 & MySQL",
-          "ProjectUrl": "www.myexquest.com",
-          "ProjectImageUrl": "assets/images/rankholders/cm.jpg",
-          "ProjectStatus" : 0
-          }
+    "ProjectStatus": 1
+  },
+  {
+    "ProjectID": 3,
+    "ProjectTitle": "Jesus Calls Studio Management System",
+    "ProjectDesc": "This system is designed to keep track the overall process of the TV shows from making to the final stage. For each stage separate roles of people are reviewed for approval. Also, this will track those personal activities in their organization. For master data, AngularJS 1 is used to achieve the SPA concept.",
+    "ProjectStartDate": "15-08-2015",
+    "ProjectEndDate": "25-08-2016",
+    "ProjectClient": "Dr. Paul Dinakar",
+    "ProjectRole": "Developer",
+    "ProjectTechnologies": "CodeIgniter, Angular & MySQL",
+    "ProjectUrl": "Offline Application",
+    "ProjectImageUrl": "assets/images/rankholders/jc.jpg",
+    "ProjectStatus": 1
+  },
+  {
+    "ProjectID": 4,
+    "ProjectTitle": "SRM Institute of Science and Technology",
+    "ProjectDesc": "This system is developed for SRM Institute of Science and Technology college. It is designed with more customized views and modules based on the client needs.",
+    "ProjectStartDate": "01-08-2015",
+    "ProjectEndDate": "30-12-2015",
+    "ProjectClient": "SRM University",
+    "ProjectRole": "Content Manager",
+    "ProjectTechnologies": "Drupal 7",
+    "ProjectUrl": "www.srmuniv.ac.in",
+    "ProjectImageUrl": "assets/images/rankholders/srm.png",
+    "ProjectStatus": 1
+  },
+  {
+    "ProjectID": 5,
+    "ProjectTitle": "EXQ – Cerebral Matters LMS",
+    "ProjectDesc": "This application is designed to train the brain dysfunction. By training with this application the end user is able to improvise the brain execution in various domains like complex attention, perspective taking, time management, working memory etc… Based on the survey results taken up by the customer, the training is automatically provided. Over 30 games is developed to train the brain in various domain using SCORM compliance. ",
+    "ProjectStartDate": "27-08-2015",
+    "ProjectEndDate": "-",
+    "ProjectClient": "Sucheta Kamath, Cerebral Matters",
+    "ProjectRole": "Developer & Deployment",
+    "ProjectTechnologies": "Moodle 3.3, SCORM 2004, Angular 2 & MySQL",
+    "ProjectUrl": "www.myexquest.com",
+    "ProjectImageUrl": "assets/images/rankholders/cm.jpg",
+    "ProjectStatus": 1
+  },
+  {
+    "ProjectID": 6,
+    "ProjectTitle": "Connexus - Pearson Online Blended Learning & Education",
+    "ProjectDesc": "Connexus is designed to offer the widest range of content for K–12 learners with hundreds of proven, standards-based, online courses at a variety of course levels. Using this application the student will work independently and sequentially through the courses guided by both system- and teacher-generated feedback and grading. Teachers monitor student performance and differentiate instruction to support student learning.",
+    "ProjectStartDate": "03-10-2018",
+    "ProjectEndDate": "-",
+    "ProjectClient": "Pearson",
+    "ProjectRole": "Devloper",
+    "ProjectTechnologies": "Angular, Angular JS (1.5) With Typescript",
+    "ProjectUrl": "www.pearson.com",
+    "ProjectImageUrl": "assets/images/rankholders/nissan.png",
+    "ProjectStatus": 0
+  }
 ]
