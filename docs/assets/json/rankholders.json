@@ -1,4 +1,5 @@
-[{
+[
+  {
     "StudentID": 1,
     "ImageUrl": "assets/images/rankholders/nissan.png",
     "StudentName": "NissanConnect - Nissan Motors India",
@@ -32,5 +33,12 @@
     "StudentName": "EXQ – Cerebral Matters LMS",
     "StudentTitle": "United States",
     "StudentDesc": "This application is designed to train the brain dysfunction. By training with this application the end user is able to improvise the brain execution in various domains like complex attention, perspective taking, time management, working memory etc… Based on the survey results taken up by the customer, the training is automatically provided. Over 30 games is developed to train the brain in various domain using SCORM compliance."
+  },
+  {
+    "StudentID": 6,
+    "ImageUrl": "assets/images/rankholders/cm.jpg",
+    "StudentName": "Connexus - Pearson Online Blended Learning & Education",
+    "StudentTitle": "United States",
+    "StudentDesc": "This application is designed to offer the widest range of content for K–12 learners with hundreds of proven, standards-based, online courses at a variety of course levels. Using this application the student will work independently and sequentially through the courses guided by both system- and teacher-generated feedback and grading. Teachers monitor student performance and differentiate instruction to support student learning."
   }
 ]
